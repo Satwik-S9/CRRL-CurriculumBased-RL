@@ -10,17 +10,18 @@ This repo follows the cleanRL approach of one file doing everything so `curricul
 ## How to run the code.
 - Download and build dependecies for [cleanrl]().
 - Then run 
-	- for ordered CRRL
 
 ```bash
-python curriculum.py --track --crl --exp-name EXP_NAME --wandb-project-name PNAME \
---total-timesteps 50000
+	# FOR ORDERED CRL WITH USER DEFINED RATIO OF EASY:MEDIUM:HARD CURRICULA
+	python curriculum.py --track --crl --exp-name EXP_NAME --wandb-project-name PNAME \
+	--total-timesteps 50000
 ```
-	- for random CRRL
+- for random CRRL
 
 ```bash
- python curriculum.py --crl --random-crl --total-timesteps 50000 --track --wandb-project-name PNAME \
- --exp-name EXP_NAME
+	# FOR RANDOM CRL WHERE THE CURRICULUM IS GENERATED RANDOMLY IN ANY ORDER 
+	python curriculum.py --crl --random-crl --total-timesteps 50000 --track --wandb-project-name PNAME \
+	--exp-name EXP_NAME
 ```
 
 
