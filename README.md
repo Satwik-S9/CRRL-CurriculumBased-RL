@@ -12,16 +12,16 @@ This repo follows the cleanRL approach of one file doing everything so `curricul
 - Then run 
 
 ```bash
-	# FOR ORDERED CRL WITH USER DEFINED RATIO OF EASY:MEDIUM:HARD CURRICULA
-	python curriculum.py --track --crl --exp-name EXP_NAME --wandb-project-name PNAME \
-	--total-timesteps 50000
+# FOR ORDERED CRL WITH USER DEFINED RATIO OF EASY:MEDIUM:HARD CURRICULA
+python curriculum.py --track --crl --exp-name EXP_NAME --wandb-project-name PNAME \
+--total-timesteps 50000
 ```
 - for random CRRL
 
 ```bash
-	# FOR RANDOM CRL WHERE THE CURRICULUM IS GENERATED RANDOMLY IN ANY ORDER 
-	python curriculum.py --crl --random-crl --total-timesteps 50000 --track --wandb-project-name PNAME \
-	--exp-name EXP_NAME
+# FOR RANDOM CRL WHERE THE CURRICULUM IS GENERATED RANDOMLY IN ANY ORDER 
+python curriculum.py --crl --random-crl --total-timesteps 50000 --track --wandb-project-name PNAME \
+--exp-name EXP_NAME
 ```
 
 
